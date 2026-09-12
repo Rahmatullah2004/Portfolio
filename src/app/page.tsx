@@ -1,9 +1,15 @@
-import Image from "next/image";
+import AboutPage from "@/features/about/AboutPage";
+import HomePage from "@/features/home/HomePage";
 
 export default function Home() {
   return (
     <div>
-      <h1>Home page is here</h1>
+      <section id="home" className="scroll-mt-20">
+        <HomePage />
+      </section>
+      <section id="about" className="scroll-mt-20">
+        <AboutPage />
+      </section>
     </div>
   );
 }
