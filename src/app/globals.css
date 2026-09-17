@@ -29,7 +29,7 @@ body {
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f3f4f6;
   --foreground: #535964;
 
   --card: #ffffff;
