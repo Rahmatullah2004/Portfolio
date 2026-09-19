@@ -6,7 +6,7 @@ import { MdLocationPin, MdOutlineEmail } from "react-icons/md";
 
 const AboutPage = () => {
   return (
-    <div className=" mx-6 grid lg:grid-cols-2 grid-cols-1 gap-8">
+    <div className=" mx-6 mb-12 grid lg:grid-cols-2 grid-cols-1 gap-8">
       <div className="py-4 px-8 ">
         <span className="flex gap-1 justify-center items-center w-fit px-4 py-2 rounded-2xl bg-[#2563eb1a] text-[#2563eb] dark:text-blue-400 text-[0.85rem] font-medium border border-border">
           <IoMdPerson />
