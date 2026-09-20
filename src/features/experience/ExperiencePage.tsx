@@ -1,60 +1,76 @@
 import { CgWebsite } from "react-icons/cg";
-import { FaUniversity, FaSchool, FaGraduationCap } from "react-icons/fa";
-import { MdOutlineLanguage } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
+import { FaBox } from "react-icons/fa6";
+import { IoMdFootball } from "react-icons/io";
 
-const education = [
-  {
-    year: "2023 – Present",
-    title: "Kabul Polytechnic University",
-    degree: "Bachelor of Computer Science (Information System)",
-    location: "Kabul, Afghanistan",
-    icon: FaUniversity,
-  },
+const experience = [
   {
     year: "07/2025 – 12/2025",
-    title: "Hadaf-e-Bartar Academy",
-    degree: "Front End Developer",
-    location: "Kabul, Afghanistan",
+    title: "Frontend / Full-Stack Developer",
+    degree: "Hadaf-e-Bartar Academy | Kabul, Afghanistan",
+    achievements: [
+      "Developed and maintained web applications for academy.",
+      "Worked with React, Tailwindcss, Node.js, and MySQL.",
+      "Collaborated with a team of developers and designers.",
+    ],
     icon: CgWebsite,
   },
   {
-    year: "2019 – 2022",
-    title: "High School",
-    degree: "High School Diploma",
-    location: "Ghazni, Afghanistan",
-    icon: FaSchool,
+    year: "2026",
+    title: "Futsal Management System",
+    degree: "Khurasan Futsal gym | Kabul, Afghanistan",
+    achievements: [
+      "Developed web applications for Khurasan Futsal Gym .",
+      "Worked with React, Tailwindcss, JWT, Node.js, and MySQL.",
+      "Collaborated with my teamate Hayatullah Mohammadi Frontend Developer.",
+    ],
+    icon: IoMdFootball,
   },
   {
-    year: "2022 – 2024",
-    title: "English House Center",
-    degree: "English Language Level C1",
-    location: "Kabul, Afghanistan",
-    icon: MdOutlineLanguage,
+    year: "2026",
+    title: "Vanix Company Website",
+    degree: "Vanix Company",
+    achievements: [
+      "Developed and designed web application for vanix company.",
+      "Worked with Next.js, tailwindcss",
+      "Collaborated with Murtaza Rahimi Senior Frontend Developer.",
+    ],
+    icon: CgWebsite,
+  },
+  {
+    year: "2025 – Present",
+    title: "Intern Developer",
+    degree: "Personal Projects | Remote",
+    achievements: [
+      "Built small web applications and tools.",
+      "Learned and applied modern development practices.",
+    ],
+    icon: FaCode,
   },
 ];
 
-function EducationPage() {
+function ExperiencePage() {
   return (
-    <section id="education" className="mx-6 mb-16 mt-20">
+    <section id="experience" className="mx-6 mb-16 mt-20">
       <div className=" px-8 py-2">
         <div className="mb-12">
           <span className="flex gap-2 my-3 justify-center items-center w-fit px-4 py-2 rounded-2xl bg-[#2563eb1a] text-[#2563eb] dark:text-blue-400 text-[0.85rem] font-medium border border-border">
-            <FaGraduationCap className="text-[0.98rem]" />
-            Education
+            <FaBox className="text-[0.98rem]" />
+            Experience
           </span>
           <h2 className="text-3xl font-bold lg:text-4xl text-black dark:text-white">
-            My Academic Journey
+            Work Experience
           </h2>
           <p className="mt-4 max-w-xl text-sm leading-6 lg:text-[1.1rem]">
-            I have always been passionate about technology and have pursued my
-            education in the field of software engineering.
+            My professional journey so far, where I&apos;ve gained hands-on
+            experience and developed my skills.
           </p>
         </div>
         <div className="relative">
           <div className="absolute left-4.25 top-0 bottom-0 w-px bg-gray-700 lg:hidden" />
           <div className="absolute left-26 top-0 bottom-0 hidden w-px bg-gray-700 lg:block" />
 
-          {education.map((item, index) => {
+          {experience.map((item, index) => {
             const Icon = item.icon;
             return (
               <div
@@ -131,7 +147,15 @@ function EducationPage() {
                   <p className=" mt-2 text-sm font-medium text-blue-500 lg:text-lg ">
                     {item.degree}
                   </p>
-                  <p className=" mt-4 text-sm lg:text-base">{item.location}</p>
+                  <ul className=" mt-4 text-sm lg:text-[0.98rem] pl-4 space-y-1">
+                    {item.achievements.map((achieve, index) => {
+                      return (
+                        <li key={index} className="list-disc list-inside">
+                          {achieve}
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
               </div>
             );
@@ -142,4 +166,4 @@ function EducationPage() {
   );
 }
 
-export default EducationPage;
+export default ExperiencePage;
