@@ -5,7 +5,7 @@ import { GrProjects } from "react-icons/gr";
 const projects = [
   {
     id: 1,
-    image: "about.png",
+    image: "futsal.png",
     thechnologies: ["React", "Node.js", "JWT", "MySQL"],
     title: "Futsal Gym Management System",
     description:
@@ -13,7 +13,7 @@ const projects = [
   },
   {
     id: 2,
-    image: "about.png",
+    image: "vanix.png",
     thechnologies: ["React", "Node.js", "JWT", "MySQL"],
     title: "Futsal Gym Management System",
     description:
