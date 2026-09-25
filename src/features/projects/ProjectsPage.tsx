@@ -21,7 +21,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "about.png",
+    image: "weather.png",
     thechnologies: ["React", "Node.js", "JWT", "MySQL"],
     title: "Futsal Gym Management System",
     description:
@@ -64,9 +64,9 @@ function ProjectsPage() {
                     alt={project.title}
                     width={400}
                     height={400}
-                    className="w-full max-w-130 sm:max-w-180 lg:max-w-150 h-auto rounded-xl"
+                    className="w-full max-w-130 sm:max-w-180 lg:max-w-150 h-auto rounded-xl shadow-xl"
                   />
-                  <div className="flex justify-start mt-4 items-center gap-1">
+                  <div className="flex justify-start mt-6 items-center gap-1">
                     {project.thechnologies?.map((thechnology, i) => {
                       return (
                         <span
