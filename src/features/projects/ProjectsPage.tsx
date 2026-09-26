@@ -6,34 +6,28 @@ const projects = [
   {
     id: 1,
     image: "futsal.png",
-    thechnologies: ["React", "Node.js", "JWT", "MySQL"],
+    thechnologies: ["React", "TailwindCss", "Node.js", "JWT", "MySQL"],
     title: "Futsal Gym Management System",
     description:
       "A complete management system for futsal gym with booking, payment and member management features.",
+    url: "#",
   },
   {
     id: 2,
     image: "vanix.png",
-    thechnologies: ["React", "Node.js", "JWT", "MySQL"],
-    title: "Futsal Gym Management System",
+    thechnologies: ["Next.js", "TailwindCss"],
+    title: "Vanix Company Website",
     description:
-      "A complete management system for futsal gym with booking, payment and member management features.",
+      "A complete website for Vanix Company show there works and experience.",
+    url: "vanix-tawny.vercel.app",
   },
   {
     id: 3,
     image: "weather.png",
-    thechnologies: ["React", "Node.js", "JWT", "MySQL"],
-    title: "Futsal Gym Management System",
-    description:
-      "A complete management system for futsal gym with booking, payment and member management features.",
-  },
-  {
-    id: 4,
-    image: "about.png",
-    thechnologies: ["React", "Node.js", "JWT", "MySQL"],
-    title: "Futsal Gym Management System",
-    description:
-      "A complete management system for futsal gym with booking, payment and member management features.",
+    thechnologies: ["React", "TypeScripts", "API", "TailwindCss"],
+    title: "Weather App",
+    description: "A simple weather application using real-time weather API.",
+    url: "weather-forecast-coral-six.vercel.app",
   },
 ];
 
@@ -64,9 +58,9 @@ function ProjectsPage() {
                     alt={project.title}
                     width={400}
                     height={400}
-                    className="w-full max-w-130 sm:max-w-180 lg:max-w-150 h-auto rounded-xl shadow-xl"
+                    className="w-full h-72 max-w-130 sm:max-w-180 lg:max-w-150 rounded-xl shadow-xl"
                   />
-                  <div className="flex justify-start mt-6 items-center gap-1">
+                  <div className="flex flex-wrap justify-start mt-6 items-center gap-1">
                     {project.thechnologies?.map((thechnology, i) => {
                       return (
                         <span
@@ -82,9 +76,9 @@ function ProjectsPage() {
                     {project.title}
                   </h1>
                   <p className="text-[0.85rem]">{project.description}</p>
-                  <span className="text-4xl">
+                  <a className="text-4xl" href={project.url}>
                     <FaArrowRight className="bg-background hover:bg-blue-500 hover:text-white transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
-                  </span>
+                  </a>
                 </div>
               </div>
             );
