@@ -54,7 +54,7 @@ function ExperiencePage() {
     <section id="experience" className="mx-6 mb-16 mt-20">
       <div className=" px-8 py-2">
         <div className="mb-12">
-          <span className="flex gap-2 my-3 justify-center items-center w-fit px-4 py-2 rounded-2xl bg-[#2563eb1a] text-[#2563eb] dark:text-blue-400 text-[0.85rem] font-medium border border-border">
+          <span className="flex gap-2 my-3 justify-center items-center w-fit px-4 py-2 rounded-2xl bg-[#182030] text-[#2563eb] dark:text-blue-400 text-[0.85rem] font-medium border border-border">
             <FaBox className="text-[0.98rem]" />
             Experience
           </span>
@@ -127,7 +127,7 @@ function ExperiencePage() {
                     rounded-2xl
                     border
                     border-border
-                    dark:bg-[#2563eb1a] 
+                    dark:bg-[#182030] 
                     bg-white
 
                     px-6
