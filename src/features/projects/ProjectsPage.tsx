@@ -19,7 +19,7 @@ const projects = [
     title: "Vanix Company Website",
     description:
       "A complete website for Vanix Company show there works and experience.",
-    url: "vanix-tawny.vercel.app",
+    url: "https://vanix-tawny.vercel.app",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     thechnologies: ["React", "TypeScripts", "API", "TailwindCss"],
     title: "Weather App",
     description: "A simple weather application using real-time weather API.",
-    url: "weather-forecast-coral-six.vercel.app",
+    url: "https://weather-forecast-coral-six.vercel.app",
   },
 ];
 
@@ -76,7 +76,12 @@ function ProjectsPage() {
                     {project.title}
                   </h1>
                   <p className="text-[0.85rem]">{project.description}</p>
-                  <a className="text-4xl" href={project.url}>
+                  <a
+                    className="text-4xl"
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaArrowRight className="bg-background hover:bg-blue-500 hover:text-white transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
                   </a>
                 </div>

@@ -1,6 +1,7 @@
 import { FaDownload, FaPhone } from "react-icons/fa";
 import { GrResume } from "react-icons/gr";
-import { IoPerson } from "react-icons/io5";
+import { IoLogoGithub, IoPerson } from "react-icons/io5";
+import { LiaLinkedin } from "react-icons/lia";
 import { MdLocationPin, MdOutlineMail } from "react-icons/md";
 
 const ResumePage = () => {
@@ -18,6 +19,24 @@ const ResumePage = () => {
           Download my resume or view it online. It contains a detailed summary
           of my education, experience, skills and more.
         </p>
+        <div className="flex justify-start items-center ml-4 mt-4 gap-12">
+          <a
+            className="text-[2.8rem]"
+            href="https://github.com/Rahmatullah2004"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoGithub className="bg-[#24304a] hover:bg-blue-500 hover:text-white  transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
+          </a>
+          <a
+            className="text-[2.8rem]"
+            href="http://linkedin.com/in/rahmatullah-alizada"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LiaLinkedin className="bg-[#24304a] hover:bg-blue-500 hover:text-white  transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
+          </a>
+        </div>
       </div>
       <div>
         <div className="flex flex-col justify-center items-center gap-4">
