@@ -5,6 +5,7 @@ import ExperiencePage from "../features/experience/ExperiencePage";
 import SkillsPage from "@/features/skills/SkillsPage";
 import ProjectsPage from "@/features/projects/ProjectsPage";
 import ResumePage from "@/features/resume/ResumePage";
+import ContactMe from "../features/contact/ContactMe";
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
       </section>
       <section id="resume" className="scroll-mt-20">
         <ResumePage />
+      </section>
+      <section id="contact" className="scroll-mt-20">
+        <ContactMe />
       </section>
     </div>
   );
