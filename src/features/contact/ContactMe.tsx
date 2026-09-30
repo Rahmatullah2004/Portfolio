@@ -123,7 +123,6 @@ const ContactMe = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 grid-cols-1 text-[0.94rem] dark:bg-[#182030] bg-white lg:p-8 md:p-4 sm:p-2 p-0 rounded-2xl">
-          {/* Contact Information */}
           <div className="flex flex-col gap-4 m-8 md:text-sm xs:text-[0.75rem]">
             <div className="flex justify-start items-center gap-4">
               <span className="text-blue-500 dark:bg-[#2563eb1a] bg-white p-2 text-xl border border-border shadow rounded-lg">

@@ -38,7 +38,7 @@ const ResumePage = () => {
           </a>
         </div>
       </div>
-      <div className="mt-8">
+      <div>
         <div className="flex flex-col justify-center items-center gap-4">
           <a
             className="flex sm:w-1/2 lg:w-2/3 w-full justify-center items-center cursor-pointer gap-2 px-6 py-3 rounded-2xl bg-blue-500 text-white"
