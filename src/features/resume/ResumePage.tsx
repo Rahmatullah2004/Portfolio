@@ -19,14 +19,14 @@ const ResumePage = () => {
           Download my resume or view it online. It contains a detailed summary
           of my education, experience, skills and more.
         </p>
-        <div className="flex justify-start items-center ml-4 mt-4 gap-12">
+        <div className="flex justify-start items-center ml-4 mt-4 gap-8">
           <a
             className="text-[2.8rem]"
             href="https://github.com/Rahmatullah2004"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoLogoGithub className="bg-[#24304a] hover:bg-blue-500 hover:text-white  transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
+            <IoLogoGithub className="dark:bg-[#24304a] bg-gray-200 hover:bg-blue-500 hover:text-white  transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
           </a>
           <a
             className="text-[2.8rem]"
@@ -34,7 +34,7 @@ const ResumePage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LiaLinkedin className="bg-[#24304a] hover:bg-blue-500 hover:text-white  transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
+            <LiaLinkedin className="dark:bg-[#24304a] bg-gray-200 hover:bg-blue-500 hover:text-white  transition-all duration-200 ease-in-out my-3 p-2 rounded-full" />
           </a>
         </div>
       </div>
