@@ -122,7 +122,7 @@ function ExperiencePage() {
                     row-start-2
 
                     w-full
-                    max-w-212
+                    max-w-180
 
                     rounded-2xl
                     border

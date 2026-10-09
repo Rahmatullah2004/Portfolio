@@ -59,7 +59,7 @@ function EducationPage() {
             return (
               <div
                 key={index}
-                className=" relative mb-8 last:mb-0 grid grid-cols-[36px_1fr] gap-3 lg:grid-cols-[106px_1px_70px_0.8fr] "
+                className=" relative mb-8 last:mb-0 grid grid-cols-[36px_1fr] gap-2 lg:grid-cols-[106px_1px_70px_0.8fr] "
               >
                 <div className=" col-start-2 row-start-1 mb-0 flex items-center pl-2 lg:hidden ">
                   <span className="text-sm font-medium">{item.year}</span>
@@ -106,7 +106,7 @@ function EducationPage() {
                     row-start-2
 
                     w-full
-                    max-w-212
+                    max-w-180
 
                     rounded-2xl
                     border
