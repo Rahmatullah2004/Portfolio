@@ -12,7 +12,6 @@ const sections = [
   "experience",
   "skills",
   "projects",
-  "achievements",
   "resume",
   "contact",
 ];

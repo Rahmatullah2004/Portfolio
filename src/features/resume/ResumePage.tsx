@@ -1,4 +1,4 @@
-import { FaDownload, FaPhone } from "react-icons/fa";
+import { FaDownload, FaEye, FaPhone } from "react-icons/fa";
 import { GrResume } from "react-icons/gr";
 import { IoLogoGithub, IoPerson } from "react-icons/io5";
 import { LiaLinkedin } from "react-icons/lia";
@@ -41,7 +41,7 @@ const ResumePage = () => {
       <div>
         <div className="flex flex-col justify-center items-center gap-4">
           <a
-            className="flex sm:w-1/2 lg:w-2/3 w-full justify-center items-center cursor-pointer gap-2 px-6 py-3 rounded-2xl bg-blue-500 text-white"
+            className="flex sm:w-1/2 lg:w-2/3 w-full justify-center items-center cursor-pointer gap-2 px-6 py-3 rounded-2xl bg-blue-500 hover:bg-blue-600 transition-all duration-200 ease-in-out text-white"
             href="/images/cv/Rahmatullah_Alizada_CV.pdf"
             download="Rahmatullah_Alizada_CV.pdf"
           >
@@ -51,10 +51,13 @@ const ResumePage = () => {
             Download CV
           </a>
           <a
-            className="cursor-pointer sm:w-1/2 lg:w-2/3 w-full text-center border border-border hover:bg-gray-100 dark:hover:bg-[#192134] transition-all duration-200 ease-in-out font-semibold gap-2 sm:px-6 px-4 py-3 rounded-2xl "
+            className="flex justify-center items-center cursor-pointer sm:w-1/2 lg:w-2/3 w-full text-center border border-gray-400 dark:border-border hover:bg-gray-200 dark:hover:bg-[#192134] transition-all duration-200 ease-in-out font-semibold gap-2 sm:px-6 px-4 py-3 rounded-2xl "
             target="_blank"
             href="/images/cv/Rahmatullah_Alizada_CV.pdf"
           >
+            <span>
+              <FaEye />
+            </span>
             View My CV
           </a>
         </div>
