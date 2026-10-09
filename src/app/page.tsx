@@ -1,9 +1,39 @@
-import Image from "next/image";
+import AboutPage from "@/features/about/AboutPage";
+import EducationPage from "@/features/education/EducationPage";
+import HomePage from "@/features/home/HomePage";
+import ExperiencePage from "../features/experience/ExperiencePage";
+import SkillsPage from "@/features/skills/SkillsPage";
+import ProjectsPage from "@/features/projects/ProjectsPage";
+import ResumePage from "@/features/resume/ResumePage";
+import ContactMe from "../features/contact/ContactMe";
 
 export default function Home() {
   return (
     <div>
-      <h1>Hello world</h1>
+      <section id="home" className="scroll-mt-20">
+        <HomePage />
+      </section>
+      <section id="about" className="scroll-mt-20">
+        <AboutPage />
+      </section>
+      <section id="education" className="scroll-mt-20">
+        <EducationPage />
+      </section>
+      <section id="experience" className="scroll-mt-20">
+        <ExperiencePage />
+      </section>
+      <section id="skills" className="scroll-mt-20">
+        <SkillsPage />
+      </section>
+      <section id="projects" className="scroll-mt-20">
+        <ProjectsPage />
+      </section>
+      <section id="resume" className="scroll-mt-20">
+        <ResumePage />
+      </section>
+      <section id="contact" className="scroll-mt-20">
+        <ContactMe />
+      </section>
     </div>
   );
 }
